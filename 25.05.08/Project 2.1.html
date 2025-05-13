@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CHESS | JP VILLALON </title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="gameboard">
+      <div id="boardOutside">
+        <div id="boardInside">
+          <!-- Row A -->
+          <div class="boardCorner"></div>
+          <div class="boardCenterGrid blackSquare">A</div>
+          <div class="boardCenterGrid whiteSquare">B</div>
+          <div class="boardCenterGrid blackSquare">C</div>
+          <div class="boardCenterGrid whiteSquare">D</div>
+          <div class="boardCenterGrid blackSquare">E</div>
+          <div class="boardCenterGrid whiteSquare">F</div>
+          <div class="boardCenterGrid blackSquare">G</div>
+          <div class="boardCenterGrid whiteSquare">H</div>
+          <div class="boardCorner"></div>
+          <!-- Row #1 -->
+          <div class="boardLeftGrid blackSquare">8</div>
+          <div class="whiteSquare pieceGrid"><span class="blackRook">♜</span></div>
+          <div class="blackSquare pieceGrid"><span class="blackKnight">♞</span></div>
+          <div class="whiteSquare pieceGrid"><span class="blackBishop">♝</span></div>
+          <div class="blackSquare pieceGrid"><span class="blackQueen">♛</span></div>
+          <div class="whiteSquare pieceGrid"><span class="blackKing">♚</span></div>
+          <div class="blackSquare pieceGrid"><span class="blackBishop">♝</span></div>
+          <div class="whiteSquare pieceGrid"><span class="blackKnight">♞</span></div>
+          <div class="blackSquare pieceGrid"><span class="blackRook">♜</span></div>
+          <div class="boardRightGrid whiteSquare">8</div>
+
+          <!-- Row #2 -->
+          <div class="boardLeftGrid whiteSquare">7</div>
+          <div class="blackSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="whiteSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="blackSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="whiteSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="blackSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="whiteSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="blackSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="whiteSquare pieceGrid"><span class="blackPawn">♟</span></div>
+          <div class="boardRightGrid blackSquare">7</div>
+
+          <!-- Row #3 -->
+          <div class="boardLeftGrid blackSquare">6</div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="boardRightGrid whiteSquare">6</div>
+
+          <!-- Row #4 -->
+          <div class="boardLeftGrid whiteSquare">5</div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="boardRightGrid blackSquare">5</div>
+
+          <!-- Row #5 -->
+          <div class="boardLeftGrid blackSquare">4</div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="boardRightGrid whiteSquare">4</div>
+
+          <!-- Row #6 -->
+          <div class="boardLeftGrid whiteSquare">3</div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="blackSquare pieceGrid"></div>
+          <div class="whiteSquare pieceGrid"></div>
+          <div class="boardRightGrid blackSquare">3</div>
+
+          <!-- Row #7 -->
+          <div class="boardLeftGrid blackSquare">2</div>
+          <div class="whiteSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="blackSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="whiteSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="blackSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="whiteSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="blackSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="whiteSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="blackSquare pieceGrid"><span class="whitePawn">♟</span></div>
+          <div class="boardRightGrid whiteSquare">2</div>
+
+          <!-- Row #8 -->
+          <div class="boardLeftGrid whiteSquare">1</div>
+          <div class="blackSquare pieceGrid"><span class="whiteRook">♜</span></div>
+          <div class="whiteSquare pieceGrid"><span class="whiteKnight">♞</span></div>
+          <div class="blackSquare pieceGrid"><span class="whiteBishop">♝</span></div>
+          <div class="whiteSquare pieceGrid"><span class="whiteKing">♚</span></div>
+          <div class="blackSquare pieceGrid"><span class="whiteQueen">♛</span></div>
+          <div class="whiteSquare pieceGrid"><span class="whiteBishop">♝</span></div>
+          <div class="blackSquare pieceGrid"><span class="whiteKnight">♞</span></div>
+          <div class="whiteSquare pieceGrid"><span class="whiteRook">♜</span></div>
+          <div class="boardRightGrid blackSquare">1</div>
+          <!-- Row A -->
+          <div class="boardCorner"></div>
+          <div class="boardCenterGrid whiteSquare">A</div>
+          <div class="boardCenterGrid blackSquare">B</div>
+          <div class="boardCenterGrid whiteSquare">C</div>
+          <div class="boardCenterGrid blackSquare">D</div>
+          <div class="boardCenterGrid whiteSquare">E</div>
+          <div class="boardCenterGrid blackSquare">F</div>
+          <div class="boardCenterGrid whiteSquare">G</div>
+          <div class="boardCenterGrid blackSquare">H</div>
+          <div class="boardCorner"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="chatbox">
+      <div id="chatboxContent">
+        <div id="header">
+          <h1> JP CHESS PRO </h1>
+          <p> Created by JP </p>
+        </div>
+
+        <img class="divideLine" src="./line.png" /> <br>
+
+        <div id="playerSection">
+          <div id="firstPlayerCol">
+            <div id="wPlayerName">
+              <p><b>jpnomnom</b></p>
+            </div>
+            <div id="wPlayerPhotoBox">
+              <img id="wPlayerPhotoImage" class="wPlayerBorder" src="./jp-photo.png" alt="line" />
+            </div>
+            <div id="wPlayerTurn">
+              <p><b>YOUR TURN</b></p>
+            </div>
+          </div>
+
+          <div id="versus">
+            <p><b>VS</b></p>
+          </div>
+
+          <div id="secondPlayerCol">
+            <div id="bPlayerName">
+              <p><b>lsfchaewon</b></p>
+            </div>
+            <div id="bPlayerPhotoBox">
+              <img id="bPlayerPhotoImage" class="bPlayerBorder" src="./ch-photo.png" alt="line" />
+            </div>
+            <div id="bPlayerTurn">
+              <p><b>YOUR TURN</b></p>
+            </div>
+          </div>
+
+          <!-- <div id="playerGrid">
+              <div id="wPlayerName"><p><b>jpnomnom</b></p></div>
+              <div id="bPlayerName"><p><b>lsfchaewon</b></p></div>
+
+              <div id="wPlayerPhotoBox">
+                  <img id="wPlayerPhotoImage" class="wPlayerBorder" src="./jp-photo.png"/>
+              </div>
+
+              <div id="versus"><p><b>VS</b></p></div>
+
+              <div id="bPlayerPhotoBox">
+                  <img id="bPlayerPhotoImage" class="bPlayerBorder" src="./ch-photo.png"/>
+              </div>
+
+              <div id="wPlayerTurn"><p><b>YOUR TURN</b></p></div>
+              </div> -->
+        </div>
+
+        <img class="divideLine" src="./line.png" />
+
+        <!-- <div class="lastPosition">
+          <table class="leftPositions">
+            <th>#</th>
+            <th>W</th>
+            <th>B</th>
+          </div>
+          <div class="knownMove">
+            <p>Sicilian Defense</p>
+          </div>
+        </div> -->
+
+        <div class="lastPosition">
+          <!-- <table class="leftPosTable">
+            <tr>
+              <th>#</th>
+              <th>W</th>
+              <th>B</th>
+            </tr>
+          </table> -->
+          <div class="knownMove">
+            <p>Sicilian Defense</p>
+          </div>
+          
+        </div>
+
+        <img class="divideLine" src="./line.png" />
+          <div class="lastPosition">
+            <!-- <table class="leftPosTable bottomPosTable">
+              <tr> 
+                <th>1.</th>
+                <th>a4</th>
+                <th>d5</th>
+              </tr>
+              <tr>
+                <th>2.</th>
+                <th>c3</th>
+                <th>d5</th>
+              </tr>
+              <tr>
+                  <th>3.</th>
+                  <th>e3</th>
+                  <th>♞d5</th>
+              </tr>
+              <tr>
+                  <th>4.</th>
+                  <th>♞a4</th>
+                  <th>d5</th>
+              </tr>
+              <tr>
+                  <th>5.</th>
+                  <th>g3</th>
+                  <th>♞d7</th>
+              </tr>
+              </table> -->
+
+              <table class="leftPosTable bottomPosTable">
+                <tr> 
+                  <th>#</th>
+                  <th>Move</th>
+                  <th>Response</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>a4</td>
+                  <td>d5</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>c3</td>
+                  <td>d5</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>e3</td>
+                  <td>♞d5</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>♞a4</td>
+                  <td>d5</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>g3</td>
+                  <td>♞d7</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>

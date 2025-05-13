@@ -1,0 +1,82 @@
+#main {
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 5px;
+    font: neuton, sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% max-content max-content 25%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 2x solid red;
+}
+
+#chatbox {
+    background-color: white;
+    text-align: left;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid red;
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/5;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header {
+    background-color: orange;
+    text-align: center;
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 1/1;
+    border: 2x solid red;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+#gameboard {
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    grid-row: 1/5;
+    grid-column: 1/4;
+    border: 2px solid red;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#board {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    min-width: 200px;
+    min-height: 200px;
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+}
+
+.square-white {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
